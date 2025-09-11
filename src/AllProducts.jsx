@@ -7,6 +7,7 @@ import Header from './Header';
 const AllProducts = () => {
     const [products, setProducts] = useState([]);
     const navigate = useNavigate();
+    const [isLogin, setIsLogin] = useState(true);
 
     const fetchData = async ()=>{
         const response = await axios.get('https://jsonplaceholder.typicode.com/users');
@@ -28,6 +29,10 @@ const AllProducts = () => {
             </div>
             <div >
                 <Header name='ajharul islam'/>
+            </div>
+
+            <div>
+              {isLogin ? <h1>welcome back </h1> : <h1>Please Signup</h1> }
             </div>
         </div>
        
