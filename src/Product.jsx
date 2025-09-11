@@ -17,8 +17,8 @@ const Product = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center m-10 ">
-      <div className=" w-fit h-fit p-4 p-10  border border-amber-500 rounded-2xl ">
+    <div className="flex justify-center items-center m-10 bg-amber-200 min-h-screen">
+      <div className=" w-fit h-fit m-4 p-10  border border-amber-500 rounded-2xl ">
         <h1>product {id}</h1>
         <h1>product: {store.username}</h1>
         <h1>address: {store?.address?.city}</h1>
