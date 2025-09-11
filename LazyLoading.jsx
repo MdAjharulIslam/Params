@@ -12,4 +12,4 @@ const LazyLoading = () => {
   )
 }
 
-export default LazyLoading
+export default LazyLoading;
