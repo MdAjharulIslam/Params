@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import Header from './Header';
 
 
 const AllProducts = () => {
@@ -25,7 +26,9 @@ const AllProducts = () => {
             <div className='flex items-center'>
               <button onClick={()=>navigate(`/product/${product.id}`)} className='bg-amber-300 p-2 rounded-2xl cursor-pointer ' >See Details</button>
             </div>
-            
+            <div >
+                <Header name='ajharul islam'/>
+            </div>
         </div>
        
        
