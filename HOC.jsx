@@ -20,4 +20,4 @@ const App = (WropedComponent)=>{
     }
 }
 
-const Hoc = App(Normal);
+const Hoc = App(Normal)
